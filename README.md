@@ -17,9 +17,9 @@ Note: We have cloned the DLC package within the DGP repository, so we highly rec
 To install DGP, navigate to desired installation directory "DGP_DIR" and clone the repository:
 ```
 cd "{DGP_DIR}"
-git clone https://github.com/paninski-lab/deepgraphpose.git
+git clone https://github.com/neelimishra/deep-graph-pose.git
 ```
-Follow the installation instructions [here](https://github.com/paninski-lab/deepgraphpose/tree/main/src/DeepLabCut/conda-environments) using the dgp*.yaml files, instead of the dlc*.yaml files. <br>
+Follow the installation instructions [here](https://github.com/neelimishra/deep-graph-pose/tree/master/src/DeepLabCut/conda-environments) using the dgp*.yaml files, instead of the dlc*.yaml files. <br>
  
 For example, if you are using Ubuntu OS with available GPUs, you can run the following:
 ```
@@ -75,7 +75,7 @@ export DLClight=True
 before you begin the installation process of dgp.
 
 ## To Run DGP on your videos:
-1. Use DLC's GUI to collect labels as described [here](https://github.com/paninski-lab/deepgraphpose/blob/main/src/DeepLabCut/docs/UseOverviewGuide.md). This step should create a project folder: "{PROJ_DIR}/task-scorer-date" and a folder with your labeled data  "{PROJ_DIR}/task-scorer-date/labeled-data". If you label frames from multiple videos, the GUI should automatically create folders corresponding to each video which contain *.csv, *.h5 files and *.png files with information from the manual labels.
+1. Use DLC's GUI to collect labels as described [here](https://github.com/neelimishra/deep-graph-pose/blob/master/src/DeepLabCut/docs/UseOverviewGuide.md). This step should create a project folder: "{PROJ_DIR}/task-scorer-date" and a folder with your labeled data  "{PROJ_DIR}/task-scorer-date/labeled-data". If you label frames from multiple videos, the GUI should automatically create folders corresponding to each video which contain *.csv, *.h5 files and *.png files with information from the manual labels.
 2. Inside '{PROJ_DIR}/task-scorer-date', create a folder 'videos_dgp'.
 ```
 cd '{PROJ_DIR}/task-scorer-date'
